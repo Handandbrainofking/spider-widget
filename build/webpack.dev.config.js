@@ -1,8 +1,6 @@
 'use strict'
 const base = require('./webpack.base.config')
 const merge = require('webpack-merge')
-
-module.exports = merge(base, {
-    NODE_ENV: JSON.stringify('development'),
-
-})
+console.log('params***', process.argv)
+let HOST = process.argv.splice(2)[0] || 'prod';
+module.exports = merge(base)

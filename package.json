@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack --config build/webpack.dev.config.js --progress --color",
-    "build": "webpack --config build/webpack.prod.config.js --progress --color"
+    "dev": "cross-env NODE_ENV=development webpack --config build/webpack.dev.config.js --progress --color",
+    "build:prod": "webpack --config build/webpack.prod.config.js --progress --color"
   },
   "author": "nick",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "webpack-merge": "^4.2.1"
   }
 }
