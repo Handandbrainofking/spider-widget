@@ -1,0 +1,16 @@
+{
+  "name": "phoenix-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack --config build/webpack.dev.config.js --progress --color",
+    "build": "webpack --config build/webpack.prod.config.js --progress --color"
+  },
+  "author": "nick",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-merge": "^4.2.1"
+  }
+}
